@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <section class="container mx-auto flex flex-wrap justify-center gap-5 mt-10">
+
+        <div class="product flex flex-wrap gap-5 w-9/12">
+            <div class="card w-96 bg-base-100 shadow-xl image-full">
+                <figure><img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                        alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-between">
+                        <h3 class="btn bg-transparent border-0 text-white hover:bg-transparent">Price 100 $</h3>
+                        <button onclick="priceCalculate(this)" class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl image-full">
+                <figure><img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                        alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Pants!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-between">
+                        <h3 class="btn bg-transparent border-0 text-white hover:bg-transparent">Price 100 $</h3>
+                        <button onclick="priceCalculate(this)" class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl image-full">
+                <figure><img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                        alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shirts!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-between">
+                        <h3 class="btn bg-transparent border-0 text-white hover:bg-transparent">Price 100 $</h3>
+                        <button onclick="priceCalculate(this)" class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="priceList">
+            <div id="product-list">
+                <h2 class="text-3xl text-neutral-900">Product List</h2>
+
+            </div>
+            <h2 class="text-4xl">Total: <span id="total">00</span></h2>
+            <h2 class="text-2xl text-red-500">30%  Discount: <span id="discount">00</span></h2>
+            <h2 class="text-4xl">Grand Total: <span id="grand">00</span></h2>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
